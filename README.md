@@ -1,23 +1,23 @@
 # kpa_project
 
 
-# 🛠️ Wheel Specification Form API (Django + PostgreSQL)
+#  Wheel Specification Form API (Django + PostgreSQL)
 
 A Django REST API to submit and fetch wheel specification data for railway components. Data is stored in PostgreSQL and supports dynamic nested field storage via JSONField.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✅ Submit a new wheel specification form (`POST`)
-- ✅ Retrieve filtered forms using query parameters (`GET`)
-- ✅ PostgreSQL integration with `.env` config
-- ✅ Fully tested via Postman
-- ✅ Organized Django project structure
+-  Submit a new wheel specification form (`POST`)
+-  Retrieve filtered forms using query parameters (`GET`)
+-  PostgreSQL integration with `.env` config
+-  Fully tested via Postman
+-  Organized Django project structure
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 kpa_project/
@@ -37,7 +37,7 @@ kpa_project/
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 - **Backend:** Django 
 - **API Framework:** Django REST Framework
@@ -47,7 +47,7 @@ kpa_project/
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 Create a `requirements.txt` file:
 
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧾 .env File
+## .env File
 
 Place this in your project root:
 
@@ -84,7 +84,7 @@ DB_PORT=5432
 
 ---
 
-## 🛠️ PostgreSQL Setup
+## PostgreSQL Setup
 
 Run these in `psql` or pgAdmin:
 
@@ -99,7 +99,7 @@ GRANT ALL PRIVILEGES ON DATABASE kpa_db TO kpa_user;
 
 ---
 
-## ⚙️ settings.py (Partial)
+## settings.py (Partial)
 
 In your Django settings:
 
@@ -133,9 +133,9 @@ INSTALLED_APPS = [
 
 ---
 
-## 🧪 API Usage (Postman)
+##  API Usage (Postman)
 
-### 🔸 POST `/api/forms/wheel-specifications/`
+###  POST `/api/forms/wheel-specifications/`
 
 Send this JSON:
 
@@ -164,7 +164,7 @@ Send this JSON:
 }
 ```
 
-### 🔸 GET `/api/forms/wheel-specifications`
+### GET `/api/forms/wheel-specifications`
 
 Example:
 
@@ -178,8 +178,12 @@ Filters supported:
 - `submittedDate`
 
 ---
+##  API Documentation
 
-## ▶️ Run Locally
+You can test or view the complete API docs here:
+ [Postman API Docs](https://documenter.getpostman.com/view/37306365/2sB34foMVW)
+ 
+##  Run Locally
 
 ```bash
 # Run migrations
@@ -194,7 +198,7 @@ Visit: `http://127.0.0.1:8000/api/forms/wheel-specifications/`
 
 ---
 
-## 📂 Git Commit Instruction
+##  Git Commit Instruction
 
 ```bash
 git init
@@ -209,12 +213,12 @@ git push -u origin main
 
 
 
-## 📬 Contact
+##  Contact
 
 For any issues or improvements, feel free to raise an issue or contact me directly.
 
 ---
 
-## 🏁 End
+##  End
 
 Thanks for checking out this project!
